@@ -23,7 +23,10 @@ if(k>0)
 cout<<"1";
 }
 else
+{
+k=k+a[i]
 cout<<"0";
+}
 }
 cout<<endl;
 }
