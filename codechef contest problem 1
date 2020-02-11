@@ -7,7 +7,7 @@ https://www.codechef.com/FEB20B/problems/SNUG_FIT
 using namespace std;
 int main()
 {
-int t;
+int t,f[2],j=0;
 cin>>t;
 while(t--)
 {
@@ -29,7 +29,10 @@ sum=sum+a[i];
 else
 sum=sum+b[n-1-i];
 }
-cout<<sum<<endl;
+f[j]=sum;
+j++;
 }
+for(j=0;j<2;j++)
+cout<<f[j]<<endl;
 return 0;
 }
